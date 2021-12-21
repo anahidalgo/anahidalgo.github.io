@@ -151,7 +151,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #58862c !important;
 		}
 
 	strong, b {
@@ -1843,21 +1843,21 @@ input, select, textarea {
 			background-color: transparent;
 			border: solid 1px #c9c9c9;
 			border-radius: 4px;
-			width: 2.65em;
-			height: 2.65em;
+			width: 2em;
+			height: 2em;
 			display: inline-block;
 			text-align: center;
-			line-height: 2.65em;
+			line-height: 2em;
 			color: inherit;
 		}
 
 			.icon.style2:before {
-				font-size: 1.1em;
+				font-size: .9em;
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				color: #58862c;
+				border-color: #58862c;
 			}
 
 			.icon.style2:active {
@@ -2495,7 +2495,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			box-shadow: inset 0 0 0 2px #85F2D9;
 		}
 
 		input[type="submit"]:active,
@@ -2537,7 +2537,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #f2849e;
+				background-color: #85F2D9;
 			}
 
 			input[type="submit"].primary:active,
@@ -2634,7 +2634,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2855,8 +2855,8 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 2em;
-					height: 2em;
+					width: 13.2em;
+					height: 4em;
 				}
 
 		#header nav {
@@ -2958,6 +2958,97 @@ input, select, textarea {
 
 					#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
 						background-size: 1.5em 1.5em;
+					}
+
+		}
+		
+		#header > .inner {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+		}
+
+			#header > .inner > * > :last-child {
+				margin-bottom: 0;
+			}
+
+			#header > .inner section:nth-child(1) {
+				width: calc(66% - 2.5em);
+				margin-right: 2.5em;
+			}
+
+			#header > .inner section:nth-child(2) {
+				width: calc(33% - 2.5em);
+				margin-left: 2.5em;
+			}
+
+		@media screen and (max-width: 1280px) {
+
+			#header {
+				padding: 5em 0 3em 0 ;
+			}
+
+				#header > .inner section:nth-child(1) {
+					width: calc(66% - 1.25em);
+					margin-right: 1.25em;
+				}
+
+				#header > .inner section:nth-child(2) {
+					width: calc(33% - 1.25em);
+					margin-left: 1.25em;
+				}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#header > .inner section:nth-child(1) {
+				width: 66%;
+				margin-right: 0;
+			}
+
+			#header > .inner section:nth-child(2) {
+				width: calc(33% - 2.5em);
+				margin-left: 2.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header {
+				padding: 3em 0 1em 0 ;
+			}
+
+				#header > .inner {
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+				}
+
+					#header > .inner section:nth-child(1) {
+						width: 100%;
+						margin-right: 0;
+						margin: 3em 0 0 0;
+					}
+
+					#header > .inner section:nth-child(2) {
+						-moz-order: -1;
+						-webkit-order: -1;
+						-ms-order: -1;
+						order: -1;
+						width: 100%;
+						margin-left: 0;
 					}
 
 		}
@@ -3165,7 +3256,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 1em 0 1em 0 ;
 		background-color: #f6f6f6;
 	}
 
@@ -3327,3 +3418,4 @@ input, select, textarea {
 			}
 
 		}
+
